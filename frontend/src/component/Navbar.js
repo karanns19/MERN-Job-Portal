@@ -16,6 +16,9 @@ const useStyles = makeStyles((theme) => ({
   menuButton: {
     marginRight: theme.spacing(2),
   },
+  buttons: {
+    marginRight: theme.spacing(3),
+  },
   title: {
     flexGrow: 1,
   },
@@ -34,27 +37,27 @@ const Navbar = (props) => {
     <AppBar position="fixed">
       <Toolbar>
         <Typography variant="h6" className={classes.title}>
-          Job Portal
+          CareerForge
         </Typography>
         {isAuth() ? (
           userType() === "recruiter" ? (
             <>
-              <Button color="inherit" onClick={() => handleClick("/home")}>
+              <Button className={classes.buttons} color="inherit" onClick={() => handleClick("/home")}>
                 Home
               </Button>
-              <Button color="inherit" onClick={() => handleClick("/addjob")}>
+              <Button className={classes.buttons} color="inherit" onClick={() => handleClick("/addjob")}>
                 Add Jobs
               </Button>
-              <Button color="inherit" onClick={() => handleClick("/myjobs")}>
+              <Button className={classes.buttons} color="inherit" onClick={() => handleClick("/myjobs")}>
                 My Jobs
               </Button>
-              <Button color="inherit" onClick={() => handleClick("/employees")}>
+              <Button className={classes.buttons} color="inherit" onClick={() => handleClick("/employees")}>
                 Employees
               </Button>
-              <Button color="inherit" onClick={() => handleClick("/profile")}>
+              <Button className={classes.buttons} color="inherit" onClick={() => handleClick("/profile")}>
                 Profile
               </Button>
-              <Button color="inherit" onClick={() => handleClick("/logout")}>
+              <Button className={classes.buttons} color="inherit" onClick={() => handleClick("/logout")}>
                 Logout
               </Button>
             </>

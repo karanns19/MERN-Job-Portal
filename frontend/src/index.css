@@ -5,9 +5,28 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url(./lake.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+::-webkit-scrollbar {
+  width: 5px; /* Change the width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Change the background color of the scrollbar track */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #3f51b5; /* Change the color of the scrollbar thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #14247e; /* Change the color of the scrollbar thumb on hover */
 }
